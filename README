@@ -1,0 +1,40 @@
+Informations générales
+-----------------------
+Projet de Système : Threads en espace utilisateur.
+Le but de ce projet est de construire une bibliothèque de threads en espace
+utilisateur. Cette dernière est codée en langage C.
+
+Auteurs
+-------
+Enguerran Beauvillard
+Antoine Carrincazeaux
+Samuel De Paz
+Adrien Maurin
+Tara Barami
+
+L'architecture du projet se découpe de la manière suivante :
+------------------------------------------------------------
+
+- A la racine du projet se situe le Makefile, le README ainsi que les dossiers
+  build/, src/, tests/ et headers/.
+- Dans le dossier src/ se situe le code source du projet ; thread.c
+- Dans le dossier headers/ se situent les headers nécessaires à la compilation
+  du projet ; thread.h
+- Dans le dossier tests/ se situent plusieurs tests permettant de tester notre
+  code source. Il y a également le fichier python permettant de tracer les
+  courbes; graphs.py
+- Dans le dossier build/ se situent tous les fichiers objets et les exécutables
+  générés par la compilation et l'exécution du code source et des tests.
+
+
+Liste des commandes du Makefile :
+---------------------------------
+
+- make (default target) : Compile la bibliothèque ainsi que les tests.
+- make tests : Compile l'ensemble des tests.
+- make check : Compile et exécute l'ensemble des tests.
+- make valgrind : Exécute les tests sous valgrind.
+- make pthreads : Exécute les tests pour les pthreads.
+- make graphs : Trace des courbes comparant les performances de notre
+  implémentation et de pthreads.
+- make clean : Permet de supprimer tous les fichiers temporaires. 
